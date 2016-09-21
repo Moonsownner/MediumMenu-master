@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         
         view.backgroundColor = UIColor.whiteColor()
 
-        let item = UIBarButtonItem(image: UIImage(named: "medium_icon"), style: .Plain, target: navigationController, action: #selector(MediumMenuController.showMenu))
+        let item = UIBarButtonItem(image: UIImage(named: "medium_icon"), style: .Plain, target: navigationController?.parentViewController, action: #selector(MediumMenuController.showMenu))
         item.imageInsets = UIEdgeInsetsMake(-10, 0, 0, 0)
         item.tintColor = UIColor.blackColor()
         navigationItem.leftBarButtonItem = item
