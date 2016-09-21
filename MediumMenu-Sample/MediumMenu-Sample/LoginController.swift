@@ -9,20 +9,20 @@
 import UIKit
 
 class LoginController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.whiteColor()
         
         let button = UIButton()
-        button.frame = CGRect(x: 0, y: 100, width: 100, height: 40)
-        button.setTitle("loginsuccess", forState: .Normal)
+        button.frame = CGRect(x: 0, y: 100, width: 150, height: 40)
+        button.setTitle("login success", forState: .Normal)
         button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         button.backgroundColor = UIColor.cyanColor()
         button.addTarget(self, action: #selector(LoginController.goMenu), forControlEvents: .TouchUpInside)
         view.addSubview(button)
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -60,21 +60,21 @@ class LoginController: UIViewController {
         
         self.navigationController?.pushViewController(MediumMenuController(items: [item1, item2, item3, item4, item5], childController: navi), animated: true)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
